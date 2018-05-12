@@ -1,34 +1,37 @@
-[![Build Status](https://travis-ci.org/{{github-user-name}}/{{github-app-name}}.svg?branch=master)](https://travis-ci.org/{{github-user-name}}/{{github-app-name}}.svg?branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/{{github-user-name}}/{{github-app-name}}/badge.svg?branch=master)](https://coveralls.io/github/{{github-user-name}}/{{github-app-name}}?branch=master)
+[![Build Status](https://travis-ci.org/brandondoran/graphql-directive-deprecated.svg?branch=master)](https://travis-ci.org/brandondoran/graphql-directive-deprecated.svg?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/brandondoran/graphql-directive-deprecated/badge.svg?branch=master)](https://coveralls.io/github/brandondoran/graphql-directive-deprecated?branch=master)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
-# Using this module in other modules
+When writing a GraphQL schema with the [Schema Definition Language](https://www.graph.cool/docs/faq/graphql-sdl-schema-definition-language-kr84dktnp0/), some flexibility, such as
+adding a `deprecationReason` to a field is lost. This package implements a custom directive
+to make it possible to deprecate a field or enum. This is intended for use in [Apollo Server](https://github.com/apollographql/apollo-server) that builds the schema with [graphql-tools](https://github.com/apollographql/graphql-tools). See the [Apollo graphql-tools docs](https://www.apollographql.com/docs/graphql-tools/schema-directives.html) for more information on schema directives.
 
-Here is a quick example of how this module can be used in other modules. The [TypeScript Module Resolution Logic](https://www.typescriptlang.org/docs/handbook/module-resolution.html) makes it quite easy. The file `src/index.ts` is a [barrel](https://basarat.gitbooks.io/typescript/content/docs/tips/barrel.html) that re-exports selected exports from other files. The _package.json_ file contains `main` attribute that points to the generated `lib/index.js` file and `typings` attribute that points to the generated `lib/index.d.ts` file.
+# Usage
 
-> If you are planning to have code in multiple files (which is quite natural for a NodeJS module) that users can import, make sure you update `src/index.ts` file appropriately.
-
-Now assuming you have published this amazing module to _npm_ with the name `my-amazing-lib`, and installed it in the module in which you need it -
-
-- To use the `Greeter` class in a TypeScript file -
-
-```ts
-import { Greeter } from "my-amazing-lib";
-
-const greeter = new Greeter("World!");
-greeter.greet();
+```bash
+npm install graphql-directive-deprecated
 ```
 
-- To use the `Greeter` class in a JavaScript file -
+## Example
 
-```js
-const Greeter = require('my-amazing-lib').Greeter;
+```javascript
+import { makeExecutableSchema } from 'graphql-tools';
+import { RenameDirective } from 'graphql-directive-deprecated';
 
-const greeter = new Greeter('World!');
-greeter.greet();
+const typeDefs = `
+directive @deprecated(
+  reason: String = "No longer supported"
+) on FIELD_DEFINITION | ENUM_VALUE
+
+type ExampleType {
+  newField: String
+  oldField: String @deprecated(reason: "Use newField.")
+}`;
+
+const schema = makeExecutableSchema({
+  typeDefs,
+  schemaDirectives: {
+    rename: RenameDirective
+  }
+});
 ```
-
-## Setting travis and coveralls badges
-1. Sign in to [travis](https://travis-ci.org/) and activate the build for your project.
-2. Sign in to [coveralls](https://coveralls.io/) and activate the build for your project.
-3. Replace {{github-user-name}}/{{github-app-name}} with your repo details like: "ospatil/generator-node-typescript".
