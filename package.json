@@ -3,14 +3,13 @@
   "version": "0.0.0",
   "description": "graphql-directive-deprecated",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/brandondoran/graphql-directive-deprecated",
   "author": {
-    "name": "",
-    "email": "",
-    "url": ""
+    "name": "Brandon Doran",
+    "email": "bdoran@gmail.com"
   },
   "keywords": [
-    ""
+    "graphql", "apollo", "directive", "deprecated"
   ],
   "files": [
     "lib"
