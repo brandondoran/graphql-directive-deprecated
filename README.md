@@ -16,22 +16,23 @@ npm install graphql-directive-deprecated
 
 ```javascript
 import { makeExecutableSchema } from 'graphql-tools';
-import { RenameDirective } from 'graphql-directive-deprecated';
+import { DeprecatedDirective } from 'graphql-directive-deprecated';
 
 const typeDefs = `
-directive @deprecated(
-  reason: String = "No longer supported"
-) on FIELD_DEFINITION | ENUM_VALUE
+  directive @deprecated(
+    reason: String = "No longer supported"
+  ) on FIELD_DEFINITION | ENUM_VALUE
 
-type ExampleType {
-  newField: String
-  oldField: String @deprecated(reason: "Use newField.")
-}`;
+  type ExampleType {
+    newField: String
+    oldField: String @deprecated(reason: "Use newField.")
+  }
+`;
 
 const schema = makeExecutableSchema({
   typeDefs,
   schemaDirectives: {
-    rename: RenameDirective
+    deprecated: DeprecatedDirective
   }
 });
 ```
