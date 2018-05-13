@@ -15,7 +15,9 @@ before_script:
 script:
   - npm run lint
   - npm run coverage
+  - ls -la
   - npm run build
+  - ls -la
 # after_script:
 #   # send the coverage report to coveralls
 #   - ls -la
@@ -24,6 +26,9 @@ script:
 jobs:
   include:
     # send the coverage report to coveralls
+    - stage: check
+      script: ls -la
+      node_js: "10"
     - stage: coverage
       script: 'cat coverage/lcov.info | npx coveralls'
       node_js: "10"
