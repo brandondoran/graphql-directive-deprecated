@@ -8,10 +8,6 @@ cache:
     - node_modules
 notifications:
   email: false
-before_install:
-  - npm i -g npm@6.0.1
-before_script:
-  - npm prune
 script:
   - npm run lint
   - npm run coverage
