@@ -14,5 +14,7 @@ script:
   - npm run build
 after_script:
   # send the coverage report to coveralls
+  - pwd
+  - ls -la
   - ls -la coverage
   - 'cat coverage/lcov.info | npx coveralls'
