@@ -55,7 +55,7 @@
     "node": ">=6.0.0"
   },
   "jest": {
-    "coverageDirectory": "<rootdir>/coverage/",
+    "coverageDirectory": "./coverage/",
     "transform": {
       ".(ts)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
