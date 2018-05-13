@@ -8,13 +8,15 @@ cache:
     - node_modules
 notifications:
   email: false
+before_script:
+  - mkdir coverage
+  - ls -la
 script:
   - npm run lint
   - npm run coverage
   - npm run build
 after_script:
   # send the coverage report to coveralls
-  - pwd
   - ls -la
   - ls -la coverage
   - 'cat coverage/lcov.info | npx coveralls'
