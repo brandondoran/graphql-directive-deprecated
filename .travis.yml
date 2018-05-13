@@ -8,14 +8,13 @@ cache:
     - node_modules
 notifications:
   email: false
-before_script:
+# before_script:
   # - mkdir coverage
   # - ls -la
-  - npm i -g npm@6.0.1
+  # - npm i -g npm@6.0.1
 script:
   - npm run lint
-  - npm run coverage
-  - ls -la
+  - npm test
   - npm run build
   - ls -la
 # after_script:
@@ -26,9 +25,6 @@ script:
 jobs:
   include:
     # send the coverage report to coveralls
-    - stage: check
-      script: ls -la
-      node_js: "10"
     - stage: coverage
-      script: 'cat coverage/lcov.info | npx coveralls'
+      script: 'npm run coverage -- --coverageReporters=text-lcov | coveralls'
       node_js: "10"
