@@ -1,22 +1,29 @@
 language: node_js
 node_js:
-  - 6
-  - 8
-  - 10
+  - "6"
+  - "8"
+  - "10"
 cache:
   directories:
     - node_modules
 notifications:
   email: false
 before_script:
-  - mkdir coverage
-  - ls -la
+  # - mkdir coverage
+  # - ls -la
+  - npm i -g npm@6.0.1
 script:
   - npm run lint
   - npm run coverage
   - npm run build
-after_script:
-  # send the coverage report to coveralls
-  - ls -la
-  - ls -la coverage
-  - 'cat coverage/lcov.info | npx coveralls'
+# after_script:
+#   # send the coverage report to coveralls
+#   - ls -la
+#   - ls -la coverage
+#   - 'cat coverage/lcov.info | npx coveralls'
+jobs:
+  include:
+    # send the coverage report to coveralls
+    - stage: coverage
+      script: 'cat coverage/lcov.info | npx coveralls'
+      node_js: "10"
