@@ -8,10 +8,10 @@ cache:
     - node_modules
 notifications:
   email: false
-# before_script:
+before_script:
   # - mkdir coverage
   # - ls -la
-  # - npm i -g npm@6.0.1
+  - npm i -g npm@6.1
 script:
   - npm run lint
   - npm test
