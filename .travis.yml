@@ -6,12 +6,15 @@ node_js:
 cache:
   directories:
     - node_modules
+    - "$HOME/.npm"
 notifications:
   email: false
 before_install:
   # - mkdir coverage
   # - ls -la
   - npm i -g npm@6.1
+install:
+  - npm ci
 script:
   - npm run lint
   - npm test
