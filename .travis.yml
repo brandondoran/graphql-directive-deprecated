@@ -12,7 +12,7 @@ notifications:
 before_install:
   # - mkdir coverage
   # - ls -la
-  - npm i -g npm@6.1
+  - npm i -g npm@5
 install:
   - npm ci
 script:
