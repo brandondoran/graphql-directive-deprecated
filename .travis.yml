@@ -19,7 +19,6 @@ script:
   - npm run lint
   - npm test
   - npm run build
-  - ls -la
 # after_script:
 #   # send the coverage report to coveralls
 #   - ls -la
@@ -29,5 +28,5 @@ jobs:
   include:
     # send the coverage report to coveralls
     - stage: coverage
-      script: 'npm run coverage -- --coverageReporters=text-lcov | coveralls'
+      script: 'npm -v; npm run coverage -- --coverageReporters=text-lcov | coveralls'
       node_js: "10"
