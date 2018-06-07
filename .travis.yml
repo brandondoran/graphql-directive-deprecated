@@ -9,12 +9,12 @@ cache:
     - "$HOME/.npm"
 notifications:
   email: false
-before_install:
+# before_install:
   # - mkdir coverage
   # - ls -la
-  - npm i -g npm@5
-# install:
-#   - npm ci
+  # - npm i -g npm@5
+install:
+  - npm install
 script:
   - npm run lint
   - npm test
