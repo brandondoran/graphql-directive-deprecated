@@ -13,8 +13,8 @@ before_install:
   # - mkdir coverage
   # - ls -la
   - npm i -g npm@5
-install:
-  - npm ci
+# install:
+#   - npm ci
 script:
   - npm run lint
   - npm test
