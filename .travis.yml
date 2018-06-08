@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  # - "6"
+  - "6"
   - "8"
   - "10"
 cache:
@@ -19,5 +19,5 @@ jobs:
   include:
     # send the coverage report to coveralls
     - stage: coverage
+      node_js: lts/*
       script: 'npm -v; npm run coverage -- --coverageReporters=text-lcov | coveralls'
-      node_js: "10"
