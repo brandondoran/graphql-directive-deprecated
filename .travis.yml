@@ -1,6 +1,5 @@
 language: node_js
 node_js:
-  - "6"
   - "8"
   - "10"
 cache:
@@ -13,11 +12,15 @@ install:
   - npm install
 script:
   - npm run lint
-  - npm test
+  - npm run coverage
   - npm run build
+after_script: "cat ./coverage/lcov.info | npx coveralls"
 jobs:
   include:
-    # send the coverage report to coveralls
-    - stage: coverage
+    - stage: release
       node_js: lts/*
-      script: 'npm -v; npm run coverage -- --coverageReporters=text-lcov | coveralls'
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npx semantic-release
