@@ -17,11 +17,6 @@ script:
 after_script: "cat ./coverage/lcov.info | npx coveralls"
 jobs:
   include:
-    # send the coverage report to coveralls
-    # - stage: coverage
-    #   node_js: lts/*
-    #   script: 'npm -v; npm run coverage -- --coverageReporters=text-lcov | coveralls'
-    # Define the release stage that runs semantic-release
     - stage: release
       node_js: lts/*
       deploy:
