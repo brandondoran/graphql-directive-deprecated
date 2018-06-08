@@ -9,7 +9,11 @@
     "email": "bdoran@gmail.com"
   },
   "keywords": [
-    "graphql", "apollo", "directive", "deprecated"
+    "graphql",
+    "apollo",
+    "directive",
+    "deprecated",
+    "schema directive"
   ],
   "files": [
     "lib"
@@ -46,6 +50,7 @@
     "npm": "^6.0.0",
     "prettier": "^1.5.2",
     "rimraf": "^2.0.0",
+    "semantic-release": "^15.5.1",
     "ts-jest": "^22.0.1",
     "ts-node": "^3.2.0",
     "tslint": "^5.0.0",
