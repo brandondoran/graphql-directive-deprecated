@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/brandondoran/graphql-directive-deprecated.svg?branch=master)](https://travis-ci.org/brandondoran/graphql-directive-deprecated.svg?branch=master)
+[![Build Status](https://travis-ci.com/brandondoran/graphql-directive-deprecated.svg?branch=master)](https://travis-ci.com/brandondoran/graphql-directive-deprecated)
 [![Coverage Status](https://coveralls.io/repos/github/brandondoran/graphql-directive-deprecated/badge.svg?branch=master)](https://coveralls.io/github/brandondoran/graphql-directive-deprecated?branch=master)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 

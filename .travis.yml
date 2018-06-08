@@ -9,21 +9,12 @@ cache:
     - "$HOME/.npm"
 notifications:
   email: false
-# before_install:
-  # - mkdir coverage
-  # - ls -la
-  # - npm i -g npm@5
 install:
   - npm install
 script:
   - npm run lint
   - npm test
   - npm run build
-# after_script:
-#   # send the coverage report to coveralls
-#   - ls -la
-#   - ls -la coverage
-#   - 'cat coverage/lcov.info | npx coveralls'
 jobs:
   include:
     # send the coverage report to coveralls

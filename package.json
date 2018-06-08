@@ -1,7 +1,7 @@
 {
   "name": "graphql-directive-deprecated",
   "version": "0.0.1",
-  "description": "graphql-directive-deprecated",
+  "description": "A GraphQL schema directive for deprecating fields",
   "license": "MIT",
   "repository": "https://github.com/brandondoran/graphql-directive-deprecated",
   "author": {
