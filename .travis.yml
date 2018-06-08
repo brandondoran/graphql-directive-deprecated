@@ -21,3 +21,11 @@ jobs:
     - stage: coverage
       node_js: lts/*
       script: 'npm -v; npm run coverage -- --coverageReporters=text-lcov | coveralls'
+    # Define the release stage that runs semantic-release
+    - stage: release
+      node_js: lts/*
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npx semantic-release
