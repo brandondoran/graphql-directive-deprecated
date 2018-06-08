@@ -1,7 +1,7 @@
 {
   "name": "graphql-directive-deprecated",
   "version": "0.0.1",
-  "description": "graphql-directive-deprecated",
+  "description": "A GraphQL schema directive for deprecating fields",
   "license": "MIT",
   "repository": "https://github.com/brandondoran/graphql-directive-deprecated",
   "author": {
@@ -17,14 +17,15 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "clean": "rimraf lib && rimraf coverage",
+    "build": "tsc --pretty",
+    "clean": "rimraf lib",
+    "coverage": "npm t -- --coverage",
     "format": "prettier --write \"{src,__tests__}/**/*.ts\" --single-quote --trailing-comma es5",
     "lint": "tslint --force --format verbose \"src/**/*.ts\"",
+    "precoverage": "rimraf coverage",
+    "prebuild": "npm run clean",
     "prepublishOnly": "npm run build",
-    "prebuild": "npm run clean && npm run format && npm run lint && echo Using TypeScript && tsc --version",
-    "build": "tsc --pretty",
     "test": "jest",
-    "coverage": "npm t -- --coverage",
     "watch": "npm run build -- --watch",
     "watch:test": "npm t -- --watch"
   },
@@ -55,6 +56,7 @@
     "node": ">=6.0.0"
   },
   "jest": {
+    "coverageDirectory": "./coverage/",
     "transform": {
       ".(ts)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
