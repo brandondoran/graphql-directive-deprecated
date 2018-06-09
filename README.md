@@ -1,5 +1,8 @@
 [![Build Status](https://travis-ci.com/brandondoran/graphql-directive-deprecated.svg?branch=master)](https://travis-ci.com/brandondoran/graphql-directive-deprecated)
 [![Coverage Status](https://coveralls.io/repos/github/brandondoran/graphql-directive-deprecated/badge.svg?branch=master)](https://coveralls.io/github/brandondoran/graphql-directive-deprecated?branch=master)
+[![dependencies Status](https://david-dm.org/brandondoran/graphql-directive-deprecated/status.svg)](https://david-dm.org/brandondoran/graphql-directive-deprecated)
+[![devDependencies Status](https://david-dm.org/brandondoran/graphql-directive-deprecated/dev-status.svg)](https://david-dm.org/brandondoran/graphql-directive-deprecated?type=dev)
+[![peerDependencies Status](https://david-dm.org/brandondoran/graphql-directive-deprecated/peer-status.svg)](https://david-dm.org/brandondoran/graphql-directive-deprecated?type=peer)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
