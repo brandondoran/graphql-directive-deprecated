@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "A GraphQL schema directive for deprecating fields",
   "license": "MIT",
-  "repository": "https://github.com/brandondoran/graphql-directive-deprecated",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brandondoran/graphql-directive-deprecated.git"
+  },
   "author": {
     "name": "Brandon Doran",
     "email": "bdoran@gmail.com"
