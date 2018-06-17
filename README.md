@@ -4,7 +4,7 @@
 [![devDependencies Status](https://david-dm.org/brandondoran/graphql-directive-deprecated/dev-status.svg)](https://david-dm.org/brandondoran/graphql-directive-deprecated?type=dev)
 [![peerDependencies Status](https://david-dm.org/brandondoran/graphql-directive-deprecated/peer-status.svg)](https://david-dm.org/brandondoran/graphql-directive-deprecated?type=peer)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT) [![Greenkeeper badge](https://badges.greenkeeper.io/brandondoran/graphql-directive-deprecated.svg)](https://greenkeeper.io/)
 
 When writing a GraphQL schema with the [Schema Definition Language](https://www.graph.cool/docs/faq/graphql-sdl-schema-definition-language-kr84dktnp0/), some flexibility, such as
 adding a `deprecationReason` to a field is lost. This package implements a custom directive
