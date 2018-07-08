@@ -1,3 +1,16 @@
+# 1.0.0 (2018-07-08)
+
+
+### Features
+
+* update dependencies ([d8d1ad6](https://github.com/brandondoran/graphql-directive-deprecated/commit/d8d1ad6))
+* version 0.0.1 ([e3ab496](https://github.com/brandondoran/graphql-directive-deprecated/commit/e3ab496))
+
+
+### BREAKING CHANGES
+
+* bump major version
+
 # 1.0.0 (2018-06-17)
 
 
