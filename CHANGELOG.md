@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/brandondoran/graphql-directive-deprecated/compare/v1.0.0...v1.1.0) (2018-07-08)
+
+
+### Features
+
+* **package:** remove accidentally added "install" devDep ([#7](https://github.com/brandondoran/graphql-directive-deprecated/issues/7)) ([c4f3182](https://github.com/brandondoran/graphql-directive-deprecated/commit/c4f3182))
+
 # 1.0.0 (2018-07-08)
 
 
