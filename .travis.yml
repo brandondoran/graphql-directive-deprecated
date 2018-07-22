@@ -8,13 +8,16 @@ cache:
     - "$HOME/.npm"
 notifications:
   email: false
+before_install:
+  - npm install -g greenkeeper-lockfile
 install:
   - npm install
+before_script: greenkeeper-lockfile-update
 script:
   - npm run lint
   - npm run coverage
   - npm run build
-after_script: "cat ./coverage/lcov.info | npx coveralls"
+after_script: "greenkeeper-lockfile-upload && cat ./coverage/lcov.info | npx coveralls"
 jobs:
   include:
     - stage: release
