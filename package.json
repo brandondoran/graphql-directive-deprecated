@@ -46,7 +46,7 @@
     "@semantic-release/changelog": "^3.0.0",
     "@semantic-release/git": "^7.0.1",
     "@semantic-release/npm": "^4.0.0",
-    "@types/graphql": "^0.13.1",
+    "@types/graphql": "^14.0.0",
     "@types/jest": "^23.0.0",
     "@types/node": "^10.3.2",
     "coveralls": "^3.0.1",
