@@ -2,9 +2,9 @@ import { SchemaDirectiveVisitor } from 'graphql-tools';
 import { DeprecatedDirective } from '../src/deprecated-directive';
 
 describe('DeprecatedDirective', () => {
-  let directive;
-  let config;
-  let field;
+  let directive: DeprecatedDirective;
+  let config: any;
+  let field: any;
 
   beforeEach(() => {
     field = {};
