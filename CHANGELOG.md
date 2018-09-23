@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/brandondoran/graphql-directive-deprecated/compare/v1.1.0...v2.0.0) (2018-09-23)
+
+
+### Features
+
+* **package:** update graphql-tools to the latest version 🚀 ([#19](https://github.com/brandondoran/graphql-directive-deprecated/issues/19)) ([267b2a6](https://github.com/brandondoran/graphql-directive-deprecated/commit/267b2a6))
+
+
+### BREAKING CHANGES
+
+* **package:** bumping the major version since graphql-tools bumped it's major version to accommodate breaking changes in graphql.
+
 # [1.1.0](https://github.com/brandondoran/graphql-directive-deprecated/compare/v1.0.0...v1.1.0) (2018-07-08)
 
 
