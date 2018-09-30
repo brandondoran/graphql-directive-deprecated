@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/brandondoran/graphql-directive-deprecated/compare/v2.0.0...v2.0.1) (2018-09-30)
+
+
+### Bug Fixes
+
+* **package:** use correct version for graphql peer dependency ([b4adca2](https://github.com/brandondoran/graphql-directive-deprecated/commit/b4adca2))
+
 # [2.0.0](https://github.com/brandondoran/graphql-directive-deprecated/compare/v1.1.0...v2.0.0) (2018-09-23)
 
 
