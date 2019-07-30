@@ -86,6 +86,18 @@
       "@semantic-release/changelog",
       "@semantic-release/npm",
       "@semantic-release/git"
+    ],
+    "plugins": [
+      ["@semantic-release/commit-analyzer", {
+        "preset": "angular",
+        "releaseRules": [
+          {"type": "docs", "scope":"README", "release": "patch"},
+          {"type": "chore", "scope":"deps", "release": "patch"}
+        ],
+        "parserOpts": {
+          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
+        }
+      }]
     ]
   }
 }
