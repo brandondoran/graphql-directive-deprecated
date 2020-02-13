@@ -43,10 +43,10 @@
     "graphql": "^0.12.0 || ^0.13.0 || ^14.0.0"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^3.0.2",
-    "@semantic-release/commit-analyzer": "^6.2.0",
-    "@semantic-release/git": "^7.0.8",
-    "@semantic-release/npm": "^5.1.4",
+    "@semantic-release/changelog": "^5.0.0",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/npm": "^7.0.3",
     "@types/graphql": "^14.5.0",
     "@types/jest": "^25.1.2",
     "@types/node": "^13.7.1",
@@ -55,7 +55,7 @@
     "jest": "^25.1.0",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.2",
-    "semantic-release": "^15.13.3",
+    "semantic-release": "^17.0.3",
     "ts-jest": "^25.2.0",
     "ts-node": "^8.6.2",
     "tslint": "^6.0.0",
