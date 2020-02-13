@@ -102,7 +102,7 @@
             {
               "type": "chore",
               "scope": "deps",
-              "release": "patch"
+              "release": "minor"
             }
           ],
           "parserOpts": {
