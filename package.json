@@ -37,30 +37,30 @@
     "watch:test": "npm t -- --watch"
   },
   "dependencies": {
-    "graphql-tools": "^4.0.4"
+    "graphql-tools": "^4.0.6"
   },
   "peerDependencies": {
     "graphql": "^0.12.0 || ^0.13.0 || ^14.0.0"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^3.0.2",
-    "@semantic-release/commit-analyzer": "^6.2.0",
-    "@semantic-release/git": "^7.0.8",
-    "@semantic-release/npm": "^5.1.4",
-    "@types/graphql": "^14.2.0",
-    "@types/jest": "^24.0.11",
-    "@types/node": "^11.12.2",
-    "coveralls": "^3.0.3",
-    "graphql": "^14.2.0",
-    "jest": "^24.8.0",
-    "prettier": "^1.16.4",
-    "rimraf": "^2.6.3",
-    "semantic-release": "^15.13.3",
-    "ts-jest": "^24.0.1",
-    "ts-node": "^8.0.3",
-    "tslint": "^5.14.0",
+    "@semantic-release/changelog": "^5.0.0",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/npm": "^7.0.3",
+    "@types/graphql": "^14.5.0",
+    "@types/jest": "^25.1.2",
+    "@types/node": "^13.7.1",
+    "coveralls": "^3.0.9",
+    "graphql": "^14.6.0",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^17.0.3",
+    "ts-jest": "^25.2.0",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.0.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.4.1"
+    "typescript": "^3.7.5"
   },
   "engines": {
     "node": ">=6.0.0"
