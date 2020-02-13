@@ -63,7 +63,7 @@
     "typescript": "^3.7.5"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.0.0"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
