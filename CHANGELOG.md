@@ -1,3 +1,12 @@
+# [2.2.0](https://github.com/brandondoran/graphql-directive-deprecated/compare/v2.1.1...v2.2.0) (2020-02-23)
+
+## [2.1.1](https://github.com/brandondoran/graphql-directive-deprecated/compare/v2.1.0...v2.1.1) (2020-02-13)
+
+
+### Bug Fixes
+
+* **relaese:** fix changelog generation ([#163](https://github.com/brandondoran/graphql-directive-deprecated/issues/163)) ([0a7b7c8](https://github.com/brandondoran/graphql-directive-deprecated/commit/0a7b7c89ebfea7fe8be8850d9f2467177ca8ffc5))
+
 ## [2.0.1](https://github.com/brandondoran/graphql-directive-deprecated/compare/v2.0.0...v2.0.1) (2018-09-30)
 
 
