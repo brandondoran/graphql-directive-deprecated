@@ -1,3 +1,5 @@
+# [2.5.0](https://github.com/brandondoran/graphql-directive-deprecated/compare/v2.4.0...v2.5.0) (2020-05-08)
+
 # [2.4.0](https://github.com/brandondoran/graphql-directive-deprecated/compare/v2.3.0...v2.4.0) (2020-04-10)
 
 # [2.3.0](https://github.com/brandondoran/graphql-directive-deprecated/compare/v2.2.0...v2.3.0) (2020-03-28)
