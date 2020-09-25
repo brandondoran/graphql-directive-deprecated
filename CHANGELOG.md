@@ -1,3 +1,16 @@
+# [3.0.0](https://github.com/brandondoran/graphql-directive-deprecated/compare/v2.8.0...v3.0.0) (2020-09-25)
+
+
+* chore!: drop support for Node 6 and 8 (#332) ([a66d61b](https://github.com/brandondoran/graphql-directive-deprecated/commit/a66d61b1539dfe7dd3958d9a8d55fe7ec789b77b)), closes [#332](https://github.com/brandondoran/graphql-directive-deprecated/issues/332)
+
+
+### BREAKING CHANGES
+
+* dropping Node 6 and 8 which have reached end-of-life.
+
+The Typescript build target is changed from es2015 to es2017, which became
+fully supported in Node 9.
+
 # [2.8.0](https://github.com/brandondoran/graphql-directive-deprecated/compare/v2.7.0...v2.8.0) (2020-08-21)
 
 # [2.7.0](https://github.com/brandondoran/graphql-directive-deprecated/compare/v2.6.0...v2.7.0) (2020-08-21)
